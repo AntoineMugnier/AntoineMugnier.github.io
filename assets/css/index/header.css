@@ -1,7 +1,7 @@
 header{
     display: flex;
     justify-content: space-between;
-    height: 100px;  
+    height: 150px;  
     align-items: center;
     border-bottom-width: 1px;
     border-bottom-color: white;
@@ -37,6 +37,6 @@ header{
 .tooltip-btn:hover{
   color:gray;
   text-decoration: none;
-}
+} 
 
 
