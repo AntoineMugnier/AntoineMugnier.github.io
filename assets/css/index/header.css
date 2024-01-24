@@ -1,0 +1,42 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;  
+    align-items: center;
+    border-bottom-width: 1px;
+    border-bottom-color: white;
+    border-bottom-style: solid;
+}
+
+.left-header{
+  margin-right: 150px;
+  margin-left: 50px;
+  font-size: large;
+}
+
+.title-header{
+  white-space: nowrap;
+  font-weight: bolder;
+}
+.right-header{
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
+  margin-right: 50px;
+}
+.title-box{
+  display: grid;
+}
+
+.tooltip-btn{
+  color:white;
+  font-size: large;
+  text-decoration: none;
+}
+.tooltip-btn:hover{
+  color:gray;
+  text-decoration: none;
+}
+
+
