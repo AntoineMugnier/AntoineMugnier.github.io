@@ -4,7 +4,6 @@ header{
     justify-content: space-between;
     height: 57px;  
     align-items: center;
-    margin-bottom: 50px;
 }
 
 .left-header{
@@ -28,11 +27,8 @@ header{
   display: grid;
 }
 
-.index-page{
-  background-color: lightgray ;
-  min-height: 500px;
 
-}
+
 .tooltip-container{
   
 }
@@ -53,6 +49,18 @@ body{
   object-fit: contain;
 }
 
+.index-page{
+  background-color: lightgray ;
+}
+
+main{
+  background-color: yellow;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  padding: auto;
+
+}
+
 .about-corps{
   display: flex;
   flex-direction: row;
@@ -63,8 +71,15 @@ body{
 
 .description{
   background-color: red;
-  flex: 1
+  padding-left: 30px;
+  padding-right: 30px;
+  flex: 1;
 }
 .profile-photo-container{
   height: 300px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
+
