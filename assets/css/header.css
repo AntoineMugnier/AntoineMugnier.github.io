@@ -30,6 +30,12 @@ body{
   background-color: rgb(16, 16, 20) ;
 }
 
+.hyperlink{
+color: whitesmoke;  
+}
+.hyperlink:hover{
+  color: gray;
+}
 .left-header{
   margin-right: 150px;
   margin-left: 50px;
