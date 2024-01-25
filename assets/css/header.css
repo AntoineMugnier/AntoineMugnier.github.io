@@ -29,7 +29,8 @@ body{
   font-weight: bolder;
 }
 .right-header{
-  width: 350px;
+  white-space: nowrap;
+  width: 600px;;
   display: flex;
   justify-content: space-between;
   flex-shrink: 0;
