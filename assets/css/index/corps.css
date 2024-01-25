@@ -1,20 +1,9 @@
 
-main{
-  padding: auto;  
-  border-bottom-width: 1px;
-  border-bottom-color: white;
-  border-bottom-style: solid;
-}
-
-.about-corps{
+.description-box{
   display: flex;
   flex-direction: row;
-  max-width:1000px;
   justify-content: space-between;
   margin: auto;
-  padding-top: 50px;
-  padding-bottom: 50px;
-
 }
 
 .description{

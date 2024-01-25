@@ -2,12 +2,11 @@
 
 <head>
   <link rel="stylesheet" href="assets/css/header.css">
-  <link rel="stylesheet" href="assets/css/index/main.css">
+  <link rel="stylesheet" href="assets/css/profesional_project/corps.css">
   <title> Portfolio - Antoine Mugnier</title>
 </head>
 
 <body>
-  <div class=index-page>
     <header>
       <div class=left-header>
         <span class=title-header>
@@ -22,12 +21,12 @@
         </div>
         <div class="tooltip-container">
           <a href="professional_projects.html" class=tooltip-btn>
-           Professional Projects
+            Professional Projects
           </a>
         </div>
         <div class="tooltip-container">
           <a href="personal_projects.html" class=tooltip-btn>
-           Personal Projects
+            Personal Projects
           </a>
         </div>
         <div class="tooltip-container">
@@ -38,7 +37,34 @@
       </div>
     </header>
     <main>
-      
+      <div class="corps">
+      <div class="projects">
+        <h3>Magna instrument Firmware development (2020-2023) - Depixus </h3>
+        <p> Depixus is a biotech company developing a new technology (MAGNA) for extracting exhaustive
+          information from DNA/RNA fragments. This technology needs a unique instrument to support it, which is
+          developed in parallel to the technology by Depixus.
+          I personally contibuted to the development of the instrument by leading the development of the firmware, which
+          is the microprogram running on the unique microcontroller of the instrument which pilotes its physical functions.
+          I started the project alone in 2020 and was later joined by two other firmware engineers.
+          Together and in cooperation with the other teams developing the instrument (Mechanical, Electronics, R&D,..), we
+          developed the firmware that would run on the Beta release of the instrument.</p>
+
+          In this project I have:
+          <ul>
+            <li>Chosen the microcontroller model and contributed to its integration on a PCB</li>
+            <li>Implemented an architecture based on the Active Objects pattern using the QPCPP framework suite</li>
+            <li>Developed drivers and middlewares in C and C++ for controlling IMU, Motors driver (Stepper, DC), position sensor, ext. ADC, RH sensor, EEPROMs,
+            screen controller, laser controller, T° sensor.
+            </li>
+            <li>Developed numerous unit and integration tests for the active objects, drivers, and middlewares </li>
+            <li>Created docker images and CI pipelines on gitlab for running unit tests on the cloud and integration test on dedicated testbenches</li>
+            <li>Implemented Scrum and Devops methodology principles in a team of 3 engineers (including me) </li>
+          </ul>
+      </div>
+      <div class="dpx-project-images">
+      <img class= "instrument" src="assets/images/instrument1.png">
+      <img class="magnetic-tweezers" src="assets/images/mt1.png">
+      </div>
+    </div>
     </main>
-  </div>
 </body>
