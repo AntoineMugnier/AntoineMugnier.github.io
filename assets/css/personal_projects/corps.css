@@ -1,6 +1,22 @@
 
 
+.kaori-hsm-project{
+  margin-bottom: 40px;
+}
 .kaori-example{
+  border-radius: 15px;
+  border-color: whitesmoke;
+  border-width: 3px;
+  border-style: solid;
+  margin-top: 25px;
+  max-width: 100%;
+  height: auto;
+}
+.cortex-m-microclock-project{
+  margin-bottom: 40px;
+}
+
+.ruthless-flow-screenshot{
   border-radius: 15px;
   border-color: whitesmoke;
   border-width: 3px;
