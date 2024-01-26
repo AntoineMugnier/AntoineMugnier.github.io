@@ -40,30 +40,45 @@
     <main>
       <div class="corps">
         <div class="projects">
-          <h3>Kaori-HSM, an event-driven Hierarchical State Machine(HSM) library in Rust (Released in 2024-)</h3>
-          <p>
-            The QPCPP framework I used at Depixus included a library called <a class=hyperlink target="_blank" href="https://www.state-machine.com/qpcpp/api.html">QEP</a> 
-            which allows to develop hierarchical state machines in C++. Hierarchical state machines are different from regular state machine
-            in the way they can have nested states, allowing multiple states to share the same handling of events thanks to their common states.
-            This trait of HSMs prevents a lot of repetitive code that would be present in non-hierarchical state machines equivalent.
+          <div class="kaori-hsm-project">
+            <h3><a class="hyperlink" target="_blank" href="https://github.com/AntoineMugnier/kaori-hsm">Kaori-HSM</a>, an event-driven Hierarchical State Machine(HSM) library in Rust (Released in January 2024)</h3>
+            <p>
+              The QPCPP framework I used at Depixus included a library called <a class=hyperlink target="_blank"
+                href="https://www.state-machine.com/qpcpp/api.html">QEP</a>
+              which allows to develop hierarchical state machines in C++. Hierarchical state machines are different from
+              regular state machine
+              in the way they can have nested states, allowing multiple states to share the same handling of events
+              thanks to their common states.
+              This particularity of HSMs prevents a lot of repetitive code that would be present in non-hierarchical state
+              machines equivalent.
             </p>
             <p>
-            I strongly believe in the potential of HSMs and in particular in Active Objects based architecture in the embedded world.
-            I also strongly believe that Rust is a promising language to be used in embedded systems development.
-            That's why I develop my own QEP equivalent in Rust that I called Kaori-HSM. Kaori-HSM is however far from being a copy of QEP.
-            It takes advantage of Rust-specific features like traits and macros to give to the user what I judge a better API. Kaori-HSM can also have an
-            infinite degree of nested states thanks to a recursive states searching algorithm, while QEP is limited to 6.
+              I strongly believe in the potential of HSMs and in particular in Active Objects based architecture in the
+              embedded world.
+              I also strongly believe that Rust is a promising language to be used in embedded systems development.
+              That's why I developed my own QEP equivalent in Rust that I called Kaori-HSM. Kaori-HSM is however far from
+              being a copy of QEP.
+              It takes advantage of Rust-specific features like traits and macros to give to the user what I judge a
+              better API. Kaori-HSM can also have an
+              infinite degree of nested states thanks to a recursive state searching algorithm, while QEP is limited to
+              6.
             </p>
             <p>
-            I hope in a close future to be able to add more crates working in synergy with Kaori-HSM, I'm thinking of a tool generating statechart diagrams
-            from Kaori-HSM state machine code, a crate for performing unit test on Kaori-HSM and maybe also of a crate for checking the state machine respects
-            UML 2.5 standard. We will see... 
-          </p>
-        </div>
-        <div>
-
+              I hope in a close future to be able to add more crates working in synergy with Kaori-HSM, I'm thinking of
+              a tool generating statechart diagrams
+              from Kaori-HSM state machine code, a crate for performing unit test on Kaori-HSM and maybe also of a crate
+              for checking the state machine respects
+              UML 2.5 standard.
+            </p>
+          </div>
+          <div class="cortex-m-microclock-project">
+            <h3><a class="hyperlink" target="_blank" href="https://github.com/AntoineMugnier/cortex-m-microclock">Cortex-M-Microclock</a>, a Rust crate for measuring time Cortex-M processors (released in november 2023)</h3>
+              <p> This crate lays on the 32 bits CYCCNT counter present in most Cortex-M processor, which increments with each system clock tick.
+                It gives to the user the ability to produce blocking delays and also to retrieve timestamps which can be compared with each other to measure time.
+              </p>
+          </div>
         </div>
       </div>
-  </main>
+    </main>
   </div>
 </body>
