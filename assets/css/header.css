@@ -1,7 +1,7 @@
 header{
     display: flex;
     justify-content: space-between;
-    height: 135px;  
+    height: 150px;  
     align-items: center;
     border-bottom-width: 1px;
     border-bottom-color: white;
@@ -58,7 +58,7 @@ color: whitesmoke;
   display: grid;
 }
 .tooltip-container-active{
-  border: 2px;
+  border: 3ypx;
   border-color: whitesmoke;
   border-style: solid;
   padding-left: 10px;
