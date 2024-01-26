@@ -1,37 +1,11 @@
 
 
-
-.profesional_projects{
-  margin: auto;
-}
-.dpx-project-images{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: auto;
-  margin-top: 60px;
-}
-.instrument{
-  height: 350px;
-  margin-right: 30px;
-  margin-left: 30px;
-  margin-top: auto;
-  margin-bottom: auto;
+.kaori-example{
   border-radius: 4px;
   border-color: whitesmoke;
-  border-width: 10px;
+  border-width: 3px;
   border-style: solid;
-}
-
-.magnetic-tweezers{
-  height: 350px;
-  margin-right: 30px;
-  margin-left: 30px;
-  margin-top: auto; 
-  margin-bottom: auto;
-  border-radius: 180px;
-  background-color: whitesmoke;
-  border-color: whitesmoke;
-  border-width: 10px;
-  border-style: solid;
+  margin-top: 25px;
+  max-width: 100%;
+  height: auto;
 }
