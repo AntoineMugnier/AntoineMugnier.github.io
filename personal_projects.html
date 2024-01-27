@@ -46,51 +46,59 @@
       <div class="corps">
         <div class="projects">
           <div class="kaori-hsm-project">
-            <h3>&#8226 <a class="hyperlink" target="_blank" href="https://github.com/AntoineMugnier/kaori-hsm">Kaori-HSM</a>, an event-driven Hierarchical State Machine(HSM) library in Rust (Released in January 2024)</h3>
-            <p>
-              The QPCPP framework I used at Depixus included a library called <a class=hyperlink target="_blank"
-                href="https://www.state-machine.com/qpcpp/api.html">QEP</a>
-              which allows to develop hierarchical state machines in C++. Hierarchical state machines are different from
-              regular state machine
-              in the way they can have nested states, allowing multiple states to share the same handling of events
-              thanks to their common states.
-              This particularity of HSMs prevents a lot of repetitive code that would be present in non-hierarchical state
-              machines equivalent.
+            <h3>&#8226 <a class="hyperlink" target="_blank"
+                href="https://github.com/AntoineMugnier/kaori-hsm">Kaori-HSM</a>, an event-driven Hierarchical State
+              Machine (HSM) library in Rust (Released in January 2024)</h3>
+
+            <p>Hierarchical state machines (HSMs) are an extension of traditional state machines where states can be
+              nested within one another. This nesting allows for a hierarchical organization of states, enabling more
+              complex and modular state-based behavior modeling. In HSMs, nested states inherit event handling from
+              their parent states, reducing redundancy and improving code organization.
             </p>
             <p>
-              I strongly believe in the potential of HSMs and in particular in Active Objects based architecture in the
-              embedded world.
-              I also strongly believe that Rust is a promising language to be used in embedded systems development.
-              That's why I developed my own QEP equivalent in Rust that I called Kaori-HSM. Kaori-HSM is however far from
-              being a copy of QEP.
-              It takes advantage of Rust-specific features like traits and macros to give to the user what I judge a
-              better API. Kaori-HSM can also have an
-              infinite degree of nested states thanks to a recursive state searching algorithm, while QEP is limited to
-              6.
+              This crate provides an interface that allows developers to create their own HSMs as Rust code.
+              Once created, custom events can be successively injected into the state machine, which will lead it
+               to execute specific user-defined actions and transition to other states.
+              As this crate is primarily destined to be run on microcontrollers, I have put special effort in limiting
+              both program size and its stack usage.
+              There is also no use of dynamic memory. The library is thoroughly tested, and I even made <a
+                class="hyperlink" target="_blank" href="https://github.com/AntoineMugnier/kaori-hsm-perf-test"> a
+                specific test </a> to compare its performance to the C++ QEP library, running on a STM32f103
+              microcontroller.
             </p>
             <p>
-              I hope in a close future to be able to add more crates working in synergy with Kaori-HSM, I'm thinking of
+              I hope in a close future to be able to add more crates working in synergy with Kaori-HSM, I'm thinking for
+              example of
               a tool generating statechart diagrams
               from Kaori-HSM state machine code, a crate for performing unit test on Kaori-HSM and maybe also of a crate
-              for checking the state machine respects
+              for checking the state machine written by the developer respects
               UML 2.5 standard.
             </p>
-            <img class= kaori-example src="assets/images/kaori_hsm_example.png">
+            <img class=kaori-example src="assets/images/kaori_hsm_example.png">
           </div>
           <div class="cortex-m-microclock-project">
-            <h3>&#8226 <a class="hyperlink" target="_blank" href="https://github.com/AntoineMugnier/cortex-m-microclock">Cortex-M-Microclock</a>, a Rust crate for measuring time Cortex-M processors (released in November 2023)</h3>
-              <p> This crate lays on the 32 bits CYCCNT counter present in most Cortex-M processor, which increments with each system clock tick.
-                It gives to the user the ability to produce blocking delays and also to retrieve timestamps which can be compared with each other to measure time.
-              </p>
+            <h3>&#8226 <a class="hyperlink" target="_blank"
+                href="https://github.com/AntoineMugnier/cortex-m-microclock">Cortex-M-Microclock</a>, a Rust crate for
+              measuring time Cortex-M processors (released in November 2023)</h3>
+            <p> This crate lays on the 32 bits CYCCNT counter present in most Cortex-M processor, which increments with
+              each system clock tick.
+              It gives to the user the ability to produce blocking delays and also to retrieve timestamps which can be
+              compared with each other to measure time.
+            </p>
           </div>
           <div class="ruthless-flow">
-            <h3>&#8226 <a class="hyperlink" target="_blank" href="https://github.com/AntoineMugnier/ruthless_flow">Ruthless Flow</a>, a small game in Rust (released February 2023)</h3>
-             <p>
-              I developed this small game to improve my skill in Rust. It consists of a snake that you have to guide through the exit of a perpetually scrolling maze.
-             The difficulty of the game lies in the demultiplication of the snake heads when you pass on some specific cells. When this occurs, you should merge the 
-             heads back together as fast as possible to avoid explosion of heads numbers. You lose if any head gets caught by the bottom of the scrolling map.
-             </p>
-             <img class= ruthless-flow-screenshot src="assets/images/ruthless_flow.png">
+            <h3>&#8226 <a class="hyperlink" target="_blank"
+                href="https://github.com/AntoineMugnier/ruthless_flow">Ruthless Flow</a>, a small game in Rust (released
+              February 2023)</h3>
+            <p>
+              I developed this small game to improve my skill in Rust. It consists of a snake that you have to guide
+              through the exit of a perpetually scrolling maze.
+              The difficulty of the game lies in the demultiplication of the snake heads when you pass over specific
+              cells. When this occurs, you should merge the
+              heads back together as fast as possible to avoid explosion of heads numbers. You lose if any head gets
+              caught by the bottom of the scrolling map.
+            </p>
+            <img class=ruthless-flow-screenshot src="assets/images/ruthless_flow.png">
           </div>
         </div>
       </div>
