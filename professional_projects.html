@@ -7,68 +7,72 @@
 </head>
 
 <body>
-    <header>
-      <div class=left-header>
-        <span class=title-header>
-          Antoine MUGNIER
-        </span>
+  <header>
+    <div class=left-header>
+      <span class=title-header>
+        Antoine MUGNIER
+      </span>
+    </div>
+    <div class=right-header>
+      <div class="tooltip-container">
+        <a href="index.html" class=tooltip-btn>
+          About
+        </a>
       </div>
-      <div class=right-header>
-        <div class="tooltip-container">
-          <a href="index.html" class=tooltip-btn>
-            About
-          </a>
-        </div>
-        <div class="tooltip-container">
-          <a href="resume.html" class=tooltip-btn>
-            Resume
-          </a>
-        </div>
-        <div class="tooltip-container-active">
-          <a href="professional_projects.html" class=tooltip-btn>
-            Professional Projects
-          </a>
-        </div>
-        <div class="tooltip-container">
-          <a href="personal_projects.html" class=tooltip-btn>
-            Personal Projects
-          </a>
-        </div>
-        <div class="tooltip-container">
-          <a href="contact_me.html" class=tooltip-btn>
-            Contact Me
-          </a>
-        </div>
+      <div class="tooltip-container">
+        <a href="resume.html" class=tooltip-btn>
+          Resume
+        </a>
       </div>
-    </header>
-    <main>
-      <div class="corps">
-      <div class="profesional_projects">
-        <h3>&#8226 Magna instrument Firmware development (2020-2023) - Depixus </h3>
-        <p> Depixus is a biotech company developing a new technology (MAGNA) for extracting advcanced
-          information from DNA/RNA fragments. Because the technology is unique, it needed a specific instrument to support it. 
-          I personally contibuted to the development of the instrument by leading the development of its unique microcontroller's 
-          firmware, which pilots most of the instrument physical functions.
-          I started the project in early 2021 and was later joined in early 2022 by two other junior engineers who came under my responsability.
-          Together, and in strong cooperation with the other teams developing the instrument (Mechanical, Electronics, R&D,..), we developed a robust firmware 
-          that is now deployed on the Beta release of the instrument.</p>
-
-          In this project I have:
-          <ul>
-            <li>Chosen the microcontroller model and contributed to its integration on a PCB</li>
-            <li>Implemented an architecture based on the Active Objects pattern using the QPCPP framework suite</li>
-            <li>Developed drivers and middlewares in C and C++ for controlling IMU, Motors driver (Stepper, DC), position sensor, ext. ADC, RH sensor, EEPROMs,
-            screen controller, laser controller, T° sensor.
-            </li>
-            <li>Developed numerous unit and integration tests for the active objects, drivers, and middlewares </li>
-            <li>Created docker images and CI pipelines on gitlab for running unit tests on the cloud and integration test on dedicated testbenches</li>
-            <li>Implemented Scrum and Devops methodology principles in a team of 3 engineers (including me). In this regard, I acted as a product owner and developer. </li>
-          </ul>
+      <div class="tooltip-container-active">
+        <a href="professional_projects.html" class=tooltip-btn>
+          Professional Projects
+        </a>
       </div>
-      <div class="dpx-project-images">
-      <img class= "instrument" src="assets/images/instrument2.jpg">
-      <img class="magnetic-tweezers" src="assets/images/mt1.png">
+      <div class="tooltip-container">
+        <a href="personal_projects.html" class=tooltip-btn>
+          Personal Projects
+        </a>
+      </div>
+      <div class="tooltip-container">
+        <a href="contact_me.html" class=tooltip-btn>
+          Contact Me
+        </a>
       </div>
     </div>
-    </main>
+  </header>
+  <main>
+    <div class="corps">
+      <div class="profesional_projects">
+        <h3>&#8226 Magna instrument Firmware development (2020-2023) - Depixus </h3>
+        <p>Depixus is a biotech company developing a new technology (MAGNA) for extracting advanced information from
+          DNA/RNA fragments. Because the technology is unique, the company developed in-house a specific instrument to
+          support it.</p>
+
+        <p>I contributed to this project by having the responsibility of developing the instrument firmware, which
+          pilots most of its physical functions. Initially, I spearheaded the project independently, and later, two junior engineers joined the team under my supervision.
+          Through collaborative efforts with other departments such as Mechanical, Electronics, and R&D, we successfully engineered a robust firmware that is now deployed on the Beta release of the instrument.</p>
+
+        <p>Throughout the project, my responsibilities included:</p>
+        <ul>
+          <li>Selecting the appropriate microcontroller model and contributing to its integration onto a printed circuit
+            board (PCB).</li>
+          <li>Designing and implementing an architecture based on the Active Objects pattern using the QPCPP framework
+            suite</li>
+          <li>Developing drivers and middleware in C and C++ for various components including IMU, Motors driver
+            (Stepper, DC), position sensor, external ADC, RH sensor, EEPROMs, screen controller, laser controller, and
+            temperature sensor.</li>
+          <li>Developing numerous unit and integration tests for the active objects, drivers, and middlewares</li>
+          <li>Creating docker images and CI pipelines on GitLab for running unit tests on the cloud and integration test
+            on dedicated testbenches</li>
+          <li>Implementing Scrum and DevOps methodologies within our team of three engineers, where I took on the roles
+            of both product owner and developer.</li>
+        </ul>
+      </div>
+      <div class="dpx-project-images">
+        <img class="instrument" src="assets/images/instrument2.jpg">
+        <img class="magnetic-tweezers" src="assets/images/mt1.png">
+      </div>
+    </div>
+  </main>
 </body>
