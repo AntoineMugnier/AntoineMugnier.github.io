@@ -37,9 +37,16 @@ color: whitesmoke;
   color: gray;
 }
 .left-header{
+  display: flex;
+  justify-content: space-between;
+  width: 130px;
   margin-right: 150px;
   margin-left: 50px;
-  font-size: large;
+}
+
+.header-icon{
+  width: 24px;
+  height: 24px;
 }
 
 .title-header{
@@ -58,7 +65,7 @@ color: whitesmoke;
   display: grid;
 }
 .tooltip-container-active{
-  border: 3ypx;
+  border: 3px;
   border-color: whitesmoke;
   border-style: solid;
   padding-left: 10px;
@@ -87,5 +94,4 @@ color: whitesmoke;
   color:gray;
   text-decoration: none;
 } 
-
 
