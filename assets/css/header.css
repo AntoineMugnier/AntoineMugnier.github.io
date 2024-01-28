@@ -48,7 +48,7 @@ color: whitesmoke;
 }
 .right-header{
   white-space: nowrap;
-  width: 600px;;
+  width: 475px;
   display: flex;
   justify-content: space-between;
   flex-shrink: 0;
