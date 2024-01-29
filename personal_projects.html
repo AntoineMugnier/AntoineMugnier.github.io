@@ -58,8 +58,8 @@
             </p>
             <p>
               This crate provides an interface that allows developers to create their own HSMs as Rust code.
-              Once created, custom events can be successively injected into the state machine, which will lead it
-               to execute specific user-defined actions and transition to other states.
+              Once created, custom events can be successively injected into the state machine. Thoses events will eventually lead the state machine
+               to execute specific user-defined action and transition to another state.
               As this crate is primarily destined to be run on microcontrollers, I have put special effort in limiting
               both program size and its stack usage.
               There is also no use of dynamic memory. The library is thoroughly tested, and I even made <a
